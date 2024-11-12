@@ -9,6 +9,7 @@
       "**/OpportunityService.cls-meta.xml": "plaintext",
       "**/opportunityDashboard.js-meta.xml": "plaintext",
       "**/OpportunityDashboardController.cls-meta.xml": "plaintext",
-      "**/OpportunityTrigger.trigger-meta.xml": "plaintext"
+      "**/OpportunityTrigger.trigger-meta.xml": "plaintext",
+      "**/OpportunityServiceTest.cls-meta.xml": "plaintext",
   }
 }
