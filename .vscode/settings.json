@@ -1,7 +1,14 @@
 {
   "search.exclude": {
-    "**/node_modules": true,
-    "**/bower_components": true,
-    "**/.sfdx": true
+      "**/node_modules": true,
+      "**/bower_components": true,
+      "**/.sfdx": true
+  },
+  "files.associations": {
+      "**/HelloWorld.cls-meta.xml": "plaintext",
+      "**/OpportunityService.cls-meta.xml": "plaintext",
+      "**/opportunityDashboard.js-meta.xml": "plaintext",
+      "**/OpportunityDashboardController.cls-meta.xml": "plaintext",
+      "**/OpportunityTrigger.trigger-meta.xml": "plaintext"
   }
 }

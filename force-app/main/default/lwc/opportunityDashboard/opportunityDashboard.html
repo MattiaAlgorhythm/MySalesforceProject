@@ -1,0 +1,29 @@
+<!-- opportunityDashboard.html -->
+<template>
+    <lightning-card title="Opportunity Dashboard" icon-name="standard:opportunity">
+        <div class="slds-m-around_medium">
+            <lightning-input type="text" label="Filter by Stage" onchange={handleStageChange}></lightning-input>
+            <lightning-button label="Refresh Data" onclick={refreshData}></lightning-button>
+            <template if:true={opportunities}>
+                <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                    <thead>
+                        <tr>
+                            <th>Opportunity Name</th>
+                            <th>Amount</th>
+                            <th>Stage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <template for:each={opportunities} for:item="opp">
+                            <tr key={opp.Id}>
+                                <td>{opp.Name}</td>
+                                <td>{opp.Amount}</td>
+                                <td>{opp.StageName}</td>
+                            </tr>
+                        </template>
+                    </tbody>
+                </table>
+            </template>
+        </div>
+    </lightning-card>
+</template>
